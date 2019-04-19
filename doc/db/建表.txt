@@ -1,0 +1,4 @@
+news:主页的新闻
+    create table news( id INT NOT NULL AUTO_INCREMENT, title VARCHAR(200) NOT NULL, pic VARCHAR(100), date DATE, content VARCHAR(100) NOT NULL,PRIMARY KEY(id)) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+    title->标题，pic->图片名称(为空表示无图片,存放在vue/data/news/img下)，date->上传日期，content->内容存放路径(存放在vue/data/news/content)
+    增：insert into news set id=1,title='test',pic='qq.png',date='2019-04-15',content='createtable.txt';
